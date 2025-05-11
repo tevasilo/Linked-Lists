@@ -38,14 +38,14 @@ class AnimalShelter{
 
 		
 		AnimalShelter& operator=(const AnimalShelter &new_shelter); 					//Overload the operator=, copies the contents of a shelter to another
-		AnimalShelter& operator+=(const Animal &new_animal);								//Overload the operator+= for another animal, adds the given animal to the shelter
+		AnimalShelter& operator+=(const Animal &new_animal);						//Overload the operator+= for another animal, adds the given animal to the shelter
 		AnimalShelter& operator+=(const AnimalShelter &new_shelter);					//Overload the operator+= for another shelter, adds the given shelter to the shelter
 		AnimalShelter operator+(const AnimalShelter &new_shelter) const;				//Overload the operator+, creates a new shelter with the addition of both animals
-		friend istream& operator>>(istream &is, AnimalShelter &a);						//Overloaded '>>' for input 
-		ostream& print(ostream &os) const;														//Prints the animals of the shelter
+		friend istream& operator>>(istream &is, AnimalShelter &a);					//Overloaded '>>' for input 
+		ostream& print(ostream &os) const;								//Prints the animals of the shelter
 
 };
 
-ostream& operator<<(ostream &os, const AnimalShelter &l);								//Overload the '<<' for output
+ostream& operator<<(ostream &os, const AnimalShelter &l);							//Overload the '<<' for output
 
 #endif
